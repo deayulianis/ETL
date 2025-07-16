@@ -1,0 +1,22 @@
+Cara Menjalankan Proyek ETL Fashion Studio
+
+1. Jalankan file utama:
+   python main.py
+
+2. Untuk menjalankan unit test:
+   python python -m pytest tests
+
+Struktur folder:
+- main.py                → File utama pipeline ETL
+- utils/
+   ├── extract.py        → Proses pengambilan data dari website
+   ├── transform.py      → Pembersihan dan transformasi data
+   └── load.py           → Menyimpan data ke file CSV
+- tests/
+   ├── test_extract.py   → Unit test untuk fungsi extract
+   ├── test_transform.py → Unit test untuk fungsi transform
+   └── test_load.py      → Unit test untuk fungsi load
+- requirements.txt       → Berisi dependency yang dibutuhkan
+- submission.txt         → File petunjuk ini
+
+
